@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+.body-details {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url('../assets/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.inner-box{
+    margin-inline: .3rem;
+}
+.btn-link {
+    background-color: #4d7c0f;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    color: white;
+    transition: .6s all linear;
+}
+
+.btn-link:hover {
+    color: white;
+    background-color: black;
+}
+
+.video-box {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.inner-box {
+    border-radius: 6px;
+    background-color: white;
+    display: flex;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+@media (max-width: 768px) {
+    .body-details {
+        padding: 1rem 0;
+    }
+
+    .inner-box {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 635px) {
+    .video-box {
+        height: 15rem !important;
+    }
+    .inner-box{
+        padding: 1rem .5rem ;
+    }
+    .video{
+        height: 15rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px){
+    .btn-navigation{
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn-navigation .btn-link{
+        margin: .5rem 1rem;
+    }
+    .inner-box{
+        padding: 1rem .5rem ;
+    }
+    .video{
+        height: 10rem;
+        width: 100%;
+    }
+}
